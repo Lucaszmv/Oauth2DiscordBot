@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord | Account Confirmation</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-4-1.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <meta content="website" property="og:type" />
+    <link href="https://use.typekit.net/joc7wli.css" rel="stylesheet" />
+  </head>
+
+  <body
+    style="
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: bottom 0 right 7px;
+      background-color: #23272a !important;
+    "
+  >
+    <div
+      id="box"
+      style="
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 100px;
+        vertical-align: middle;
+        border-radius: 5px;
+        text-align: center;
+        padding: 60px;
+        background-color: #2b2e35 !important;
+      "
+    >
+      <img
+        id="server_pic"
+        src="https://media.discordapp.net/attachments/851389970840944640/851390759998586910/755244169898885160.gif"
+        style="
+          display: block;
+          border-radius: 1%;
+          margin: 10px auto;
+          width: 200px;
+          border: 0 solid #23272a;
+        "
+      />
+      <h2 style="color: #fff; font-size: 6">BOT AUTH CONFIRMATION</h2>
+      <p style="color: #eaeaea; font-size: 3; font-family: sans-serif">
+        Your Discord account has been successfully verified in server!
+      </p>
+      <p style="color: #eaeaea; font-size: 3; font-family: sans-serif">
+        You can close this page or we will close for you in 5 seconds.
+      </p>
+    </div>
+    <script>
+      window.onload = () => {
+        const code = location.href.substring(
+          location.href.indexOf("code") + 5,
+          location.href.length
+        );
+
+        if (location.href.indexOf("code") > -1) {
+          const req = new XMLHttpRequest();
+          req.open("POST", "");
+          req.send(code);
+          req.onload = () => {};
+        }
+
+        setTimeout(function () {
+          window.close();
+        }, 5500);
+      };
+    </script>
+  </body>
+</html>
