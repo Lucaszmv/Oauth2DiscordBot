@@ -2,6 +2,8 @@
 
 O Oauth2 Discord Bot é uma aplicação desenvolvida em Node.js que oferece funcionalidades relacionadas à autenticação Oauth2 e interação com servidores Discord. Ele permite que os usuários autentiquem suas contas Discord em um servidor específico e fornece recursos de gerenciamento de usuários e verificação de pontos.
 
+![Discord Bot](https://i.imgur.com/QjFHH27.png)
+
 ## Funcionalidades Principais 🚀
 
 - **Autenticação Oauth2:** O bot facilita o processo de autenticação Oauth2 para usuários, permitindo que autentiquem suas contas Discord em um servidor específico.
@@ -58,7 +60,7 @@ O bot consiste em uma série de comandos e interações definidos nos arquivos `
 
 Antes de executar o bot, é necessário configurar alguns parâmetros no arquivo ```configs.js```:
 
-- ```token`: Token de autenticação do bot no Discord.
+- ```token```: Token de autenticação do bot no Discord.
 - ```client_id```, ```client_secret```, ```redirect_uri```: Credenciais para autenticação Oauth2.
 - ```idserver```, ```idrole```: IDs do servidor Discord e do cargo a ser atribuído aos usuários verificados.
 - ```webhook```, ```webhookBackup```: URLs dos webhooks para enviar informações do usuário e backup do arquivo ```object.json```.
