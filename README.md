@@ -65,10 +65,6 @@ Antes de executar o bot, é necessário configurar alguns parâmetros no arquivo
 - ```idserver```, ```idrole```: IDs do servidor Discord e do cargo a ser atribuído aos usuários verificados.
 - ```webhook```, ```webhookBackup```: URLs dos webhooks para enviar informações do usuário e backup do arquivo ```object.json```.
 
-## Contribuição 🤝
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar o Oauth2 Discord Bot.
-
 ## Licença 📄
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
