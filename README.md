@@ -1,18 +1,18 @@
-# Oauth2 Discord Bot 🛡️
+# OAuth2 Discord Bot 🛡️
 
-O Oauth2 Discord Bot é uma aplicação desenvolvida em Node.js que oferece funcionalidades relacionadas à autenticação Oauth2 e interação com servidores Discord. Ele permite que os usuários autentiquem suas contas Discord em um servidor específico e fornece recursos de gerenciamento de usuários e verificação de pontos.
+O OAuth2 Discord Bot é uma aplicação desenvolvida em Node.js que oferece funcionalidades relacionadas à autenticação OAuth2 e interação com servidores Discord. Ele permite que os usuários autentiquem suas contas Discord em um servidor específico e fornece recursos de gerenciamento de usuários e verificação de pontos.
 
 ![Discord Bot](https://i.imgur.com/QjFHH27.png)
 
 ## Funcionalidades Principais 🚀
 
-- **Autenticação Oauth2:** O bot facilita o processo de autenticação Oauth2 para usuários, permitindo que autentiquem suas contas Discord em um servidor específico.
+- **Autenticação OAuth2:** O bot facilita o processo de autenticação OAuth2 para usuários, permitindo que autentiquem suas contas Discord em um servidor específico.
 - **Verificação de Usuários:** Oferece funcionalidades para verificar usuários autenticados, armazenar suas informações e atribuir cargos ou privilégios com base em sua autenticação.
 - **Resgate Automático de Itens:** O bot permite resgatar automaticamente itens para usuários autenticados, simplificando o processo de interação durante transmissões ao vivo.
 
 ## Pré-requisitos 📋
 
-Antes de usar o Oauth2 Discord Bot, certifique-se de ter instalado:
+Antes de usar o OAuth2 Discord Bot, certifique-se de ter instalado:
 
 - Node.js
 - npm (Node Package Manager)
@@ -25,7 +25,7 @@ Antes de usar o Oauth2 Discord Bot, certifique-se de ter instalado:
 1. Clone o repositório para o seu ambiente local:
 
 ```sh
-git clone https://github.com/Lucaszmv/Oauth2DiscordBot.git
+git clone https://github.com/Lucaszmv/OAuth2DiscordBot.git
 ```
 
 2. Instale as dependências do projeto:
@@ -42,7 +42,7 @@ npm install
 node index.js
 ```
 
-5. Siga as instruções no console para configurar e usar o Oauth2 Discord Bot.
+5. Siga as instruções no console para configurar e usar o OAuth2 Discord Bot.
 
 ## Funcionamento Detalhado ⚙️
 
@@ -50,7 +50,7 @@ O bot consiste em uma série de comandos e interações definidos nos arquivos `
 
 - ```/join```: Adiciona a quantidade escolhida de usuários ao servidor.
 - ```/help```: Exibe uma lista de comandos disponíveis para os usuários.
-- ```/links```: Fornece links úteis relacionados ao bot e à autenticação Oauth2.
+- ```/links```: Fornece links úteis relacionados ao bot e à autenticação OAuth2.
 - ```/mensagem```: Envie uma mensagem formatada com um botão de verificação para os usuários.
 - ```/ping```: Mostra o ping do bot.
 - ```/users```: Exibe quantos usuários estão armazenados no banco de dados do bot.
@@ -61,7 +61,7 @@ O bot consiste em uma série de comandos e interações definidos nos arquivos `
 Antes de executar o bot, é necessário configurar alguns parâmetros no arquivo ```configs.js```:
 
 - ```token```: Token de autenticação do bot no Discord.
-- ```client_id```, ```client_secret```, ```redirect_uri```: Credenciais para autenticação Oauth2.
+- ```client_id```, ```client_secret```, ```redirect_uri```: Credenciais para autenticação OAuth2.
 - ```idserver```, ```idrole```: IDs do servidor Discord e do cargo a ser atribuído aos usuários verificados.
 - ```webhook```, ```webhookBackup```: URLs dos webhooks para enviar informações do usuário e backup do arquivo ```object.json```.
 
